@@ -25,22 +25,22 @@ public class MusicPlayerAppApplication {
 		MusicPlayerSerivce musicPlayerService = new MusicPlayerServiceImpl(songRepository, playlistExporter, playlistFileReader);
 
 		// Add songs to the playlist
-		musicPlayerService.addSong("Beete Lamhe", "KK");
-		musicPlayerService.addSong("Tu hi meri shab hai", "KK");
-		musicPlayerService.addSong("Khuda Jane", "KK");
-		musicPlayerService.addSong("Be intehaan", "Atif Aslam");
-		musicPlayerService.addSong("Uska hi banana", "Arijit Singh");
-		musicPlayerService.addSong("Labon ko", "KK");
-		musicPlayerService.addSong("Haan tu hai", "KK");
-		musicPlayerService.addSong("Kabhi na kabhi", "Aditya Narayan");
-		musicPlayerService.addSong("Kuch iss tarah", "Atif Aslam");
-		musicPlayerService.addSong("Tere ishq mein", "Aditya Yadav");
-		musicPlayerService.addSong("Zara sa", "KK");
+musicPlayerService.addSong("Pal", "KK");
+musicPlayerService.addSong("Yaaron", "KK");
+musicPlayerService.addSong("Dil Ibaadat", "KK");
+musicPlayerService.addSong("Jeene Laga Hoon", "Atif Aslam");
+musicPlayerService.addSong("Phir Mohabbat", "Arijit Singh");
+musicPlayerService.addSong("Ajab Si", "KK");
+musicPlayerService.addSong("Alvida", "KK");
+musicPlayerService.addSong("Tera Hone Laga Hoon", "Atif Aslam");
+musicPlayerService.addSong("Tera Ban Jaunga", "Arijit Singh");
+musicPlayerService.addSong("Bekhayali", "Sachet Tandon");
+musicPlayerService.addSong("Aankhon Mein Teri", "KK");
 
-		// Play some songs
-		musicPlayerService.playSong("Beete Lamhe", "KK");
-		musicPlayerService.playSong("Khuda Jane", "KK");
-		musicPlayerService.playSong("Zara sa", "KK");
+// Play some songs
+musicPlayerService.playSong("Pal", "KK");
+musicPlayerService.playSong("Dil Ibaadat", "KK");
+musicPlayerService.playSong("Aankhon Mein Teri", "KK");
 
 		// Handle invalid cases
 		musicPlayerService.addSong("", "");

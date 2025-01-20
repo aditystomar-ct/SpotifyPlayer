@@ -68,7 +68,7 @@ musicPlayerService.playSong("Aankhon Mein Teri", "KK");
 		// Export playlist to a CSV file
 		List<Song> allSongs = musicPlayerService.getAll();
 		try {
-			musicPlayerService.exportPlaylist(allSongs, "/Users/aditya.tomar/Desktop/playlist/list1.csv", ExportFormat.CSV);
+			musicPlayerService.exportPlaylist(allSongs, "/Users/aditya.tomar/Downloads/SpotifyPlayer/playlist/list1.csv", ExportFormat.CSV);
 			System.out.println("CSV file exported successfully.");
 		} catch (IOException e) {
 			System.err.println("Error while exporting CSV file: " + e.getMessage());
@@ -77,7 +77,7 @@ musicPlayerService.playSong("Aankhon Mein Teri", "KK");
 		 //Read songs from a CSV file and display them
 //		try {
 //			System.out.println("\nReading songs from CSV file:");
-//			List<Song> csvSongs = musicPlayerService.readFromFile("/Users/aditya.tomar/Desktop/playlist/list1.csv\");
+//			List<Song> csvSongs = musicPlayerService.readFromFile("/Users/aditya.tomar/Downloads/SpotifyPlayer/playlist/list1.csv");
 //			musicPlayerService.displaySongs(csvSongs);
 //		} catch (IOException e) {
 //			System.err.println("Error reading CSV file: " + e.getMessage());
